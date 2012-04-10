@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Bootstrap-datepicker by bm1362</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/bm1362/bootstrap-datepicker">Fork On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/bm1362/bootstrap-datepicker/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/bm1362/bootstrap-datepicker/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Bootstrap-datepicker</h1>
+          <p>jQuery datepicker customized for bootstrap</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/bm1362">bm1362</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <p>This is a fork of the bootstrap-datepicker library located <a href="https://github.com/zybreak/bootstrap-datepicker">here</a>.</p>
+
+<hr><p>I added a disabled style and 3 new parameters that are useful:</p>
+
+<pre><code>noOffset: &lt;boolean&gt; - Useful for using the datepicker in the bootstrap-modal plugin; disables the plugin from automatically offsetting the calendar.
+
+preventPast: &lt;boolean&gt; - Prevents users from selecting a date that is in the past.
+
+limit: &lt;Date Object or integer representing a offset from today, in milliseconds&gt; - Allows developer to set a limit on the dates that are available for the user to select.
+</code></pre>
+
+<p>Usage:</p>
+
+<p><code>$(selector).datepicker({
+    noOffset: true,
+    preventPast: true,
+    limit: new Date("1/1/2012")
+})</code></p>
+
+<p>or </p>
+
+<p><code>$(selector).datepicker({
+    noOffset: false,
+    preventPast: true,
+    limit: (60 * 60 * 24 * 7) * 1000 // a week
+})</code></p>
+
+<p>Example: <a href="http://cs.txstate.edu/~bm1362/bootstrap-datepicker/">http://cs.txstate.edu/~bm1362/bootstrap-datepicker/</a></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    
+  </body>
+</html>
