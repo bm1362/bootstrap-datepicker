@@ -26,4 +26,4 @@ or
 	limit: (60 * 60 * 24 * 7) * 1000 // a week
 })`
 
-Example: http://cs.txstate.edu/~bm1362/bootstrap-datepicker/
+Example: http://cs.txstate.edu/~bm1362/projects/bootstrap-datepicker/
